@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <link rel="stylesheet" href="ToDoList.css"> 
+</head>
+<body>
+
+
+
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap" rel="stylesheet"> 
+<h1 id="container"> ToDo List </h1> 
+<main class="row">
+  <div class="input-group"> 
+    <div class="input-group-prepend"> 
+      <span class="input-group-text">Add something: </span>
+    </div>
+    <input type="text" class="form-control" placeholder="I'm waaaaaiting" data-name="todo-input" /> 
+    <div class="input-group-append"> 
+      <button class="add-button" data-name="add-btn">Add</button>
+    </div>
+  </div>
+
+  <div class="button-input">
+    <h3>Add Items</h3>
+    <ul class="list-group" data-name="todos-list">
+      <li class="list-group-item" data-id="1" draggable="true">
+      </li> 
+    </ul>
+  </div>
+
+  <div class="button-input">
+    <h3>Almost done</h3>
+    <ul class="list-group" data-name="in-progress"></ul>
+  </div>
+  <div class="button-input">
+    <h3>Good job handsome! Now go get a beer!</h3>
+    <ul class="list-group" data-name="done"></ul>
+  </div> 
+
+</main>
+</body>
+<script src="ToDoList.JS"></script> 
+</html>
